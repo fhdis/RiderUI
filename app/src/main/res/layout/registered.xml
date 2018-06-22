@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <android.support.v7.widget.Toolbar
+        android:id= "@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FACF1C"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="注册"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"/>
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="8dp"
+        android:background="@drawable/register_edit"
+        android:layout_marginBottom="8dp"
+        android:drawableLeft="@mipmap/ic_menu_nickname"/>
+
+    <EditText
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="3dp"
+        android:paddingLeft="8dp"
+        android:background="@drawable/register_edit"
+        android:layout_marginBottom="8dp"
+        android:drawableLeft="@mipmap/ic_menu_login_tel"/>
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center_horizontal"
+        >
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:paddingLeft="8dp"
+        android:background="@drawable/register_edit"
+        android:drawableLeft="@mipmap/ic_menu_yanzhengma"/>
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="48dp"
+            android:text="获取"
+            android:textColor="#E8DD86"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/register_button"/>
+    </LinearLayout>
+    <EditText
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="3dp"
+        android:paddingLeft="8dp"
+        android:background="@drawable/register_edit"
+        android:layout_marginBottom="8dp"
+        android:drawableLeft="@mipmap/ic_menu_password"/>
+
+    <CheckBox
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/chbAgree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我已阅读，并同意《食纷生活平台服务协议》"
+        android:checked="false"/>
+
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/login_button"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:background="@drawable/yuanjiao_shape"
+        android:text="立即注册"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="28dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        >
+        <TextView
+            android:id="@+id/button_zhuce"
+            android:layout_width="100dp"
+            android:layout_height="28dp"
+            android:text="已有账号？"
+            android:textColor="#373737"
+            />
+        <Button
+            android:layout_marginLeft="-35dp"
+            android:layout_width="100dp"
+            android:layout_height="28dp"
+            android:text="立即登录"
+            android:textColor="#EBD24D"
+            android:background="#FFFFFF"/>
+    </LinearLayout>
+</LinearLayout>
